@@ -299,9 +299,9 @@ class IpaResponse(BaseModel):
 
 class IpaRequest(BaseModel):
     input_string: str = Field(..., description="Text to be transcribed")
-    lang_code: str = Field(..., description="Language code, e.g. \"en_US\"")
+    lang_code: str = Field(..., description="Language code: yue,en_UK,en_US,eo,fr_FR,fr_QC,ja,zh_hans,zh_hant,fa,es_ES,es_MX")
     format: Optional[str] = Field(
-        "", description="Desired output format – ignored for now, defaults to \"\""
+        "", description="output format - org,num,Jyutping, ignore for not yue"
     )
     show_word_form: Optional[bool] = Field(
         False, description="Whether to show word form or not"
@@ -360,7 +360,7 @@ def get_ipa(payload: IpaRequest) -> IpaResponse:
     **POST** endpoint that receives:
 
     * ``input_string`` – text to be transcribed,
-    * ``lang_code`` – one of the language indexes you expose,
+    * ``lang_code`` – one of the language indexes you expose, 
     * ``format`` – optional (currently ignored, defaults to ``\"\"``).
 
     The endpoint returns the IPA representation of the input string.
