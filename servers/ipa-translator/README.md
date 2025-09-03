@@ -19,8 +19,9 @@ cd openapi-servers/servers/ipa-translator
 pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --reload
 ```
+---  
 
-Or using Docker:
+## 🚀 Quickstart (Docker)
 
 If you prefer containerised deployment, you can build and run the service with Docker Compose from the project root:
 
@@ -33,6 +34,16 @@ docker compose up -d
 ```
 
 The API will be reachable at `http://localhost:8000` (or the port you expose in `docker-compose.yml`).  
+
+---  
+
+## 🔗 Open WebUI Integration
+
+If you want to let AI use the IPA translator. you can point the server to open webui. See the official tutorial : https://docs.openwebui.com/openapi-servers/open-webui
+
+
+openapi.example.json also attached for your reference :)
+http://localhost:8000/openapi.json
 
 
 ---  
