@@ -45,6 +45,7 @@ If you want to let AI use the IPA translator. you can point the server to open w
 openapi.example.json also attached for your reference :)
 http://localhost:8000/openapi.json
 
+(Tips: You can toggle 'Function Calling' to 'native' in Chat Controls. )
 
 ---  
 
