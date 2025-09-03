@@ -1,21 +1,8 @@
 services:
-  filesystem-server:
+  ipa-translator:
     build:
-      context: ./servers/filesystem
+      context: ./servers/ipa-translator
     ports:
       - 8081:8000
-  memory-server:
-    build:
-      context: ./servers/memory
-    ports:
-      - 8082:8000
-    volumes:
-      - memory:/app/data:rw
-  time-server:
-    build:
-      context: ./servers/time
-    ports:
-      - 8083:8000
-
 volumes:
   memory:
