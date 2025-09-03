@@ -4,5 +4,3 @@ services:
       context: ./servers/ipa-translator
     ports:
       - 8081:8000
-volumes:
-  memory:
