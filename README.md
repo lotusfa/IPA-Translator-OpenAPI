@@ -49,6 +49,15 @@ http://localhost:8000/openapi.json
 
 ---  
 
+## 🔗 IPA Translator in Open WebUI
+
+Please take a look to the demo folder:
+
+demo/demo_en.jpg
+demo/demo_yue.jpg
+
+---  
+
 ## 🔗 Related Projects  
 
 - **IPA‑Translator (JS/HTML only)** – A client‑side web tool that performs the same IPA conversion directly in the browser. See the repository for the original UI implementation: https://github.com/lotusfa/IPA-Translator  
