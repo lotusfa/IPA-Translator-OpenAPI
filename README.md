@@ -47,14 +47,18 @@ http://localhost:8000/openapi.json
 
 (Tips: You can toggle 'Function Calling' to 'native' in Chat Controls. )
 
+
 ---  
 
-## 🔗 IPA Translator in Open WebUI
+## Demo
 
-Please take a look to the demo folder:
 
-demo/demo_en.jpg
-demo/demo_yue.jpg
+The Demo section showcases the API in action.  Open the images in the demo/ folder to see two examples of the service rendering IPA transcriptions: 
+
+    demo/demo_en.jpg – a quick conversion of an English phrase 
+    demo/demo_yue.jpg – the same workflow for Cantonese (Yue)
+     
+
 
 ---  
 
